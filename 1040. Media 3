@@ -22,7 +22,7 @@ int main(){
    else if(Media1 < 5.0){
       printf("Aluno reprovado.\n");
    }
-   else if(5.0 <= Media1 <= 6.9){
+   else if(Media1 >= 5.0 && Media1 <= 6.9){
       printf("Aluno em exame.\n");
 
       scanf("%f", &nota_exame); 
@@ -30,14 +30,15 @@ int main(){
       printf("Nota do exame: %.1f\n", nota_exame); 
 
       Media2 = (Media1 + nota_exame)/2;
-   }
-   if(Media2 >= 5.0){
+   
+      if(Media2 >= 5.0){
       printf("Aluno aprovado.\n");
       printf("Media final: %.1f\n", Media2);
-   }
-   else if(Media2 <= 4.0){
+      }
+      else{
       printf("Aluno reprovado.\n");
-      printf("Media final: %f\n", Media2);
+      printf("Media final: %.1f\n", Media2);
+      }
    }
    return 0;
 }
