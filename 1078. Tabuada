@@ -1,0 +1,19 @@
+#include <stdio.h>
+ 
+int main(){
+ 
+  int X;
+  int multiplicador = 1; 
+  int resultado; 
+
+scanf ("%d", &X);
+
+if(X > 2 && X < 1000){
+  while(multiplicador <= 10){
+  resultado = multiplicador * X;
+  printf("%d x %d = %d\n", multiplicador, X, resultado);
+  multiplicador ++;
+  }
+}
+return 0;
+}
