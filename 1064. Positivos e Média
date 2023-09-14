@@ -1,0 +1,26 @@
+#include <stdio.h>
+ 
+int main(){
+    
+   float N;
+   float media;
+   float soma = 0;
+   int positivos = 0;
+   int i;
+
+   for(i = 1; i <= 6; i++){
+   scanf("%f", &N);
+
+    if(N > 0){
+      positivos++;
+      soma = soma + N;
+    }
+   }
+
+   media = soma/positivos;
+
+   printf("%d valores positivos\n", positivos);
+   printf("%.1f\n", media);
+ 
+    return 0;
+}
